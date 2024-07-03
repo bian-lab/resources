@@ -1,6 +1,7 @@
-# TDT EEG&EMG Recording Protocol
+# TDT EEG&EMG Recording Tutorial
 
 *2024-07-01*
+
 *By: Xueqiang Wang*
 
 ---
@@ -64,18 +65,19 @@ By using the `referencer`, need to grab a `Neural Signal Referencer` to the `PZA
 
 Here we use the `example` of one EEG (1st pin of the electrode), two EMG (left and right neck muscle, 3rd and 4th pins of the electrode) and one Reference (cerebellum, 2nd pin of the electrode). And the 4 pins connect to the bank in 1st~4th channels.
 
-1. Add a `Neural Signal Referencer`. 
+**1. Add a `Neural Signal Referencer`. **
 
 ![](./images/tdt_eeg_emg_recording_protocol/Pasted%20image%2020240202141512.png)
 
-2. Setup the channel and some basic information of the referencer.
+**2. Setup the channel and some basic information of the referencer.**
 
 ![](./images/tdt_eeg_emg_recording_protocol/Pasted%20image%2020240202141559.png)
 ![](./images/tdt_eeg_emg_recording_protocol/Pasted%20image%2020240202141627.png)
+
 In the `Select Channel Range` dialog, the `First`'s value should be your first channel of the bank. And the `Count`'s value should be the pin number of your electrode. Here in the example, `First`'s value should be `1` and count should be `4`.
 Don't forget to check the `Output Reference Signal(s)` and `Save Reference Signal(s)`, and set the proper values, unless you don't want it.   
 
-3. Add stream processor to the referencer and setup 
+**3. Add stream processor to the referencer and setup**
 
 Add a stream processor under the referencer.
 
